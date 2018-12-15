@@ -1,38 +1,35 @@
 # esx_skin
 
-## 说明
-- 这个插件不适用于官方ESX
-- 这是基于魔改版修改的版本
-- 如有使用问题请添加qq群：208486207
-- 点击链接加入群【FiveM中文网官方群】：https://jq.qq.com/?_wv=1027&k=5BOQycm
+## Requirements
+- [skinchanger](https://github.com/ESX-Org/skinchanger)
 
-## 要求
-- [skinchanger](https://github.com/ESX-CN/skinchanger)
+## Download & Installation
 
-## 下载 & 安装
+### Using [fvm](https://github.com/qlaffont/fvm-installer)
+```
+fvm install --save --folder=esx esx-org/esx_skin
+```
 
-### 使用 Git
+### Using Git
 ```
 cd resources
-git clone https://github.com/ESX-CN/esx_skin [esx]/esx_skin
+git clone https://github.com/ESX-Org/esx_skin [esx]/esx_skin
 ```
 
-### 手动
-- 下载 https://github.com/ESX-CN/esx_skin/archive/master.zip
-- 解压至 `[esx]` 文件夹
+### Manually
+- Download https://github.com/ESX-Org/esx_skin/archive/master.zip
+- Put it in the `[esx]` directory
 
-## 安装
-- 添加这个至你的 `server.cfg`:
+## Installation
+- Add this in your `server.cfg`:
 
 ```
 start esx_skin
 ```
-## 更新记录
--- [2018-12-15] 修改自适应魔改版，删除无用语言，保留英文，汉化简繁。
 
 # Legal
 ### License
-esx_skin - skin selector for ESX 魔改版
+esx_skin - skin selector for ESX
 
 Copyright (C) 2015-2018 Jérémie N'gadi
 
