@@ -283,6 +283,10 @@ AddEventHandler('playerSpawned', function()
 			end)
 
 			FirstSpawn = false
+		else
+			ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
+				TriggerEvent('skinchanger:loadSkin', skin)
+			end)
 		end
 	end)
 end)
