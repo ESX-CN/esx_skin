@@ -27,7 +27,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
-function OpenMenu(submitCb, cancelCb, restrict)
+function OpenMenu(submitCb, cancelCb, restrict , skin_css)
 	local playerPed = PlayerPedId()
 
 	TriggerEvent('skinchanger:getSkin', function(skin)
@@ -93,7 +93,14 @@ function OpenMenu(submitCb, cancelCb, restrict)
 		zoomOffset = _components[1].zoomOffset
 		camOffset = _components[1].camOffset
 
+		if skin_css == nil then
+			skin_css = 'skin'
+		end
+
+		print(skin_css)
+
 		ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'skin', {
+			css 	 = skin_css,
 			title    = _U('skin_menu'),
 			align    = 'top-left',
 			elements = elements
@@ -317,8 +324,8 @@ AddEventHandler('esx_skin:openMenu', function(submitCb, cancelCb)
 end)
 
 RegisterNetEvent('esx_skin:openRestrictedMenu')
-AddEventHandler('esx_skin:openRestrictedMenu', function(submitCb, cancelCb, restrict)
-	OpenMenu(submitCb, cancelCb, restrict)
+AddEventHandler('esx_skin:openRestrictedMenu', function(submitCb, cancelCb, restrict, skin_css)
+	OpenMenu(submitCb, cancelCb, restrict, skin_css)
 end)
 
 RegisterNetEvent('esx_skin:openSaveableMenu')
