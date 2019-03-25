@@ -97,8 +97,6 @@ function OpenMenu(submitCb, cancelCb, restrict , skin_css)
 			skin_css = 'skin'
 		end
 
-		print(skin_css)
-
 		ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'skin', {
 			css 	 = skin_css,
 			title    = _U('skin_menu'),
