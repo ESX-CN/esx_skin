@@ -22,21 +22,18 @@ git clone https://github.com/ESX-CN/esx_skin [esx]/esx_skin
 - 解压至 `[esx]` 文件夹
 
 ## 安装
+- 导入 `esx_skin.sql` 至你的数据库
 - 添加这个至你的 `server.cfg`:
 
 ```
 start esx_skin
 ```
-## 更新记录
-- [2018-12-15] 修改自适应魔改版，删除无用语言，保留英文，汉化简繁。
-- [2019-03-25] 适配一下魔改版仿ol菜单
-- [2019-11-06] 同步更新语言自适应问题
 
 # Legal
 ### License
 esx_skin - skin selector for ESX 魔改版
 
-Copyright (C) 2015-2018 Jérémie N'gadi
+Copyright (C) 2015-2020 Jérémie N'gadi
 
 This program Is free software: you can redistribute it And/Or modify it under the terms Of the GNU General Public License As published by the Free Software Foundation, either version 3 Of the License, Or (at your option) any later version.
 
